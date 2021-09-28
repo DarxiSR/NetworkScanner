@@ -763,7 +763,6 @@ int main(int argc, char** argv)
 											SCAN_STATUS = false;
 											IP_TO_CHECK = CALL_TOOLS.CONVERT_IP_TO_STRING(GET_TARGETS[GET_COUNTER].INPUT_IP_ADDRESS);
 											pthread_create(&(SCANNER_NETWORK_THREAD[GET_COUNTER]), NULL, &START_ALL_IP_SCANS, (void*) GET_COUNTER);
-											sleep(2);
 											pthread_join(SCANNER_NETWORK_THREAD[GET_COUNTER], NULL);
 										}
 										return 0;
